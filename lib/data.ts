@@ -1,11 +1,12 @@
 import React from "react";
+
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-
-import WordwiseImg from "@/public/wordwise.png";
-import FastpizzaImg from "@/public/fastpizza.png";
-import ThewildoasisImg from "@/public/thewildoasis.png";
 import { LiaUniversitySolid } from "react-icons/lia";
+
+import fastpizzaimg from "./fastpizza.png";
+import thewildoasisimg from "./thewildoasis.png";
+import wordwiseimg from "./wordwise.png";
 
 export const links = [
   {
@@ -60,7 +61,7 @@ export const experiencesData = [
     date: "2020 - 2022",
   },
   {
-    title: "Transport Co-ordinator $",
+    title: "Transport Co-ordinator",
     location: "Ashby-de-la-Zouch, UK",
     description:
       "I am a shift co-ordinator/shift-manager for a well known transport company. I am responsible for managing a fleet of around 200 Drivers and everything that comes with it.",
@@ -83,7 +84,7 @@ export const projectsData = [
     description:
       "The Wild Oasis is designed to manage hotel operations, including sales statistics, cabin management, user management, booking management and so much more!",
     tags: ["React", "React Query", "Redux", "Supabase", "Styled Components"],
-    imageUrl: ThewildoasisImg,
+    imageUrl: thewildoasisimg,
     projectUrl: "https://thewildoasis-cms.netlify.app/login",
   },
   {
@@ -91,7 +92,7 @@ export const projectsData = [
     description:
       "A quick and convinient way to order pizza online. Add your pizza to the cart, manage the quanitity, track your order and more.",
     tags: ["React", "React Router", "Redux Toolkit", "Tailwind"],
-    imageUrl: FastpizzaImg,
+    imageUrl: fastpizzaimg,
     projectUrl: "https://fast-react-pizza-fewakes.netlify.app/",
   },
   {
@@ -99,7 +100,7 @@ export const projectsData = [
     description:
       "This web app is a travel tracking and adventure registration application. Show off your travels and adventures to your friends and family.",
     tags: ["React", "Context API", "Thunks"],
-    imageUrl: WordwiseImg,
+    imageUrl: wordwiseimg,
     projectUrl: null,
   },
 ] as const;
