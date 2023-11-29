@@ -3,7 +3,7 @@
 import React from "react";
 import { Resend } from "resend";
 import { validateString } from "../lib/utils";
-import { getErrorMessages } from "../lib/utils";
+import { getErrorMessage } from "../lib/utils";
 import ContactFormEmail from "@/email/contact-form-email";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -39,7 +39,7 @@ export const sendEmail = async (formData: FormData) => {
     });
   } catch (error: unknown) {
     return {
-      error: getErrorMessages(error),
+      error: getErrorMessage(error),
     };
   }
 
