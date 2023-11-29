@@ -25,9 +25,9 @@ export default function About() {
         courses and learned{" "}
         <span className="font-medium">front-end web development</span>.{" "}
         <span className="italic">My favourite part of programming</span> is the
-        problem-solving aspect, as well as the never-ending 'chase' to learn new
-        things. I <span className="underline">love</span> the feeling of finally
-        figuring out a solution to a problem. My core stack is{" "}
+        problem-solving aspect, as well as the never-ending &apos;chase&apos; to
+        learn new things. I <span className="underline">love</span> the feeling
+        of finally figuring out a solution to a problem. My core stack is{" "}
         <span className="font-medium">React.js</span>. I am also familiar with
         TypeScript. I am always looking to learn new technologies. I am
         currently looking for a{" "}
@@ -36,7 +36,7 @@ export default function About() {
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy going
+        <span className="italic">When I&apos;m not coding</span>, I enjoy going
         go-karting,watching f1, and playing with my cat. I also enjoy{" "}
         <span className="font-medium">reading books</span>. My favourite author
         is <span className="font-medium">Dan Brown</span>.
