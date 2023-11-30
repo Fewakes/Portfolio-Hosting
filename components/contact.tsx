@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
@@ -41,7 +41,10 @@ export default function Contact() {
 
       <form
         className="mt-10 flex flex-col dark:text-black"
-        action={async (formData) => {
+        id="contactForm"
+        onSubmit={async (event) => {
+          event.preventDefault();
+          const formData = new FormData(event.target as HTMLFormElement);
           const { data, error } = await sendEmail(formData);
 
           if (error) {
@@ -50,6 +53,7 @@ export default function Contact() {
           }
 
           toast.success("Email sent successfully!");
+          (document.getElementById("contactForm") as HTMLFormElement)?.reset();
         }}
       >
         <input
