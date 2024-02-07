@@ -57,10 +57,10 @@ export const experiencesData = [
     date: "2020 - 2022",
   },
   {
-    title: "Transport Co-ordinator",
+    title: "Data Analyst",
     location: "Ashby-de-la-Zouch, UK",
     description:
-      "I am a shift co-ordinator/shift-manager for a well known transport company. I am responsible for managing a fleet of around 200 Drivers and everything that comes with it.",
+     "I started as a Transport co-ordinator/shift-manager for a well known transport company. However I have quickly moved roles to become a Transport Analyst working with PowerBI and SQL.",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - present",
   },
@@ -121,4 +121,6 @@ export const skillsData = [
   "Supabase",
   "Framer Motion",
   "Git",
+  "SQL",
+  "PowerBI",
 ] as const;
