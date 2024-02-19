@@ -60,7 +60,7 @@ export const experiencesData = [
     title: "Data Analyst",
     location: "Ashby-de-la-Zouch, UK",
     description:
-     "I started as a Transport co-ordinator/shift-manager for a well known transport company. However I have quickly moved roles to become a Transport Analyst working with PowerBI and SQL.",
+     "I started as a Transport co-ordinator for a well known transport company. However I have quickly moved roles to become a Transport Analyst working with PowerBI and SQL.",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - present",
   },
