@@ -41,7 +41,7 @@ export const experiencesData = [
     date: "2020",
   },
   {
-    title: "Fleet Manager",
+    title: "JFleet Manager",
     location: "Bruntingthorpe, UK",
     description:
       "I managed a demonstration and events fleet for Jaguar and Land-Rover. I have created and overseen a process of vehicle preparations for events such as wimbledon.",
@@ -57,10 +57,10 @@ export const experiencesData = [
     date: "2020 - 2022",
   },
   {
-    title: "Data Analyst",
+    title: "Transport Coordinator",
     location: "Ashby-de-la-Zouch, UK",
     description:
-     "I started as a Transport co-ordinator for a well known transport company. However I have quickly moved roles to become a Transport Analyst working with PowerBI and SQL.",
+     "Managing transportation logistics alongside my shift manager for a multinational business.",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - present",
   },
@@ -123,4 +123,6 @@ export const skillsData = [
   "Git",
   "SQL",
   "PowerBI",
+  "Prisma",
+  "Zustand",
 ] as const;
