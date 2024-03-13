@@ -29,10 +29,7 @@ export default function About() {
         learn new things. I <span className="underline">love</span> the feeling
         of finally figuring out a solution to a problem. My core stack is{" "}
         <span className="font-medium">React.js</span>. I am also familiar with
-        TypeScript. I am always looking to learn new technologies. I am
-        currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        TypeScript. I am always looking to learn new technologies. 
       </p>
 
       <p>
