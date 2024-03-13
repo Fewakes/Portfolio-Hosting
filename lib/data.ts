@@ -41,7 +41,7 @@ export const experiencesData = [
     date: "2020",
   },
   {
-    title: "JFleet Manager",
+    title: "Fleet Manager",
     location: "Bruntingthorpe, UK",
     description:
       "I managed a demonstration and events fleet for Jaguar and Land-Rover. I have created and overseen a process of vehicle preparations for events such as wimbledon.",
