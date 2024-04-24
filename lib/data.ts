@@ -57,10 +57,10 @@ export const experiencesData = [
     date: "2020 - 2022",
   },
   {
-    title: "Transport Coordinator",
+    title: "Data Analyst",
     location: "Ashby-de-la-Zouch, UK",
     description:
-     "Managing transportation logistics alongside my shift manager for a multinational business.",
+     "Transport Co-Ordinator turned Data Analyst for a large manufacturing company where i death with all the transport and are now responsible for analytics and data insights.",
     icon: React.createElement(CgWorkAlt),
     date: "2022 - present",
   },
