@@ -76,16 +76,16 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "The Wild Oasis",
+    title: "The Wild Oasis - CLICK ME",
     description:
       "The Wild Oasis is designed to manage hotel operations, including sales statistics, cabin management, user management, booking management and so much more!",
     tags: ["React", "React Query", "Redux", "Supabase", "Styled Components"],
     imageUrl: "/thewildoasis.png",
 
-    projectUrl: "https://thewildoasis-cms.netlify.app/login",
+    projectUrl: "thewildoasis-cms.netlify.app",
   },
   {
-    title: "Fast Pizza",
+    title: "Fast Pizza - CLICK ME",
     description:
       "A quick and convinient way to order pizza online. Add your pizza to the cart, manage the quanitity, track your order and more.",
     tags: ["React", "React Router", "Redux Toolkit", "Tailwind"],
@@ -93,7 +93,7 @@ export const projectsData = [
     projectUrl: "https://fast-react-pizza-fewakes.netlify.app/",
   },
   {
-    title: "World Wise",
+    title: "World Wise - CLICK ME",
     description:
       "This web app is a travel tracking and adventure registration application. Show off your travels and adventures to your friends and family.",
     tags: ["React", "Context API", "Thunks"],
