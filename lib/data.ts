@@ -76,13 +76,13 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "The Wild Oasis - click me",
+    title: "The Wild Oasis - try me",
     description:
       "The Wild Oasis is designed to manage hotel operations, including sales statistics, cabin management, user management, booking management and so much more!",
     tags: ["React", "React Query", "Redux", "Supabase", "Styled Components"],
     imageUrl: "/thewildoasis.png",
 
-    projectUrl: "https://thewildoasis-cms.netlify.app/login",
+    projectUrl: "https://thewildoasis-cms.netlify.app",
   },
   {
     title: "Fast Pizza",
