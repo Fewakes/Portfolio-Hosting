@@ -76,7 +76,7 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "The Wild Oasis - try me",
+    title: "The Wild Oasis - Click",
     description:
       "The Wild Oasis is designed to manage hotel operations, including sales statistics, cabin management, user management, booking management and so much more!",
     tags: ["React", "React Query", "Redux", "Supabase", "Styled Components"],
