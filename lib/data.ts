@@ -36,9 +36,9 @@ export const experiencesData = [
     title: "Graduate Master's Degree",
     location: "Manchester, UK",
     description:
-      "I have Graduated from Manchester Metropolitan University with a Master's Degree in Analytics. Here, my fascination with computer languages and programming began.",
+      "I have Graduated from Manchester Metropolitan University with a Master's Degree in Analytics. Here, my fascination with computer languages, data analysis and programming began.",
     icon: React.createElement(LiaUniversitySolid),
-    date: "2020",
+    date: "2019",
   },
   {
     title: "Fleet Manager",
@@ -46,13 +46,13 @@ export const experiencesData = [
     description:
       "I managed a demonstration and events fleet for Jaguar and Land-Rover. I have created and overseen a process of vehicle preparations for events such as wimbledon.",
     icon: React.createElement(CgWorkAlt),
-    date: "2020 - 2022",
+    date: "2021 - 2022",
   },
   {
     title: "Graduated Bootcamp's",
     location: "Leicester, GB",
     description:
-      "I have completed a number of bootcamp's to learn new skills and technologies. These include Javascript, React, Next.js, Node.js, TypeScript, Redux, Tailwind and more.",
+      "I have completed a number of bootcamp's to learn new skills and technologies. These include Power BI, SQL, Javascript, React, Next.js, Node.js, TypeScript, Redux, Tailwind and more.",
     icon: React.createElement(FaReact),
     date: "2020 - 2022",
   },
@@ -62,7 +62,7 @@ export const experiencesData = [
     description:
      "Transport Co-Ordinator turned Data Analyst for a large manufacturing company where i death with all the transport and are now responsible for analytics and data insights.",
     icon: React.createElement(CgWorkAlt),
-    date: "2022 - present",
+    date: "2022 - 2024",
   },
   {
     title: "Freelance Developer",
@@ -70,7 +70,7 @@ export const experiencesData = [
     description:
       "Working both on personal and freelance projects, to gain experience and build my portfolio.",
     icon: React.createElement(FaReact),
-    date: "2022 - present",
+    date: "2022 - 2024",
   },
 ] as const;
 
