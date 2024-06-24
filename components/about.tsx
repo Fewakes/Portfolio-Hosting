@@ -21,9 +21,9 @@ export default function About() {
       <p className="mb-3">
         After graduating with a degree in{" "}
         <span className="fojnt-medium">Management & Analytics</span>, I decided
-        to pursue my passion for programming. I enrolled for a variety of
+        to pursue my passion for programming and data analysis. I enrolled for a variety of
         courses and learned{" "}
-        <span className="font-medium">front-end web development</span>.{" "}
+        <span className="font-medium">front-end web development, data manipulation & analysis. </span>.{" "}
         <span className="italic">My favourite part of programming</span> is the
         problem-solving aspect, as well as the never-ending &apos;chase&apos; to
         learn new things. I <span className="underline">love</span> the feeling
