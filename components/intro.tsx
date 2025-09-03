@@ -57,13 +57,18 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I&apos;m Jacob.</span> I&apos;m a{" "}
-        <span className="font-bold">front-end developer & Data Analyst</span> with{" "}
-        <span className="font-bold">experience. </span>I enjoy building{" "}
-        <span className="italic">beautiful & accessible</span> user interfaces, and finding actionable insights from raw data.
-        My focus is <span className="underline">React.js </span>and{" "}
-        <span className="underline">Next.js</span>
+        Hello, I&apos;m Jacob, a{" "}
+        <span className="font-bold">front-end developer</span> and{" "}
+        <span className="font-bold">data analyst</span>. My unique background in
+        analytics, management and development allows me to build robust,
+        user-friendly applications while also leveraging data to drive strategic
+        improvements. I specialise in the{" "}
+        <span className="underline">React and Next.js ecosystem</span>and am
+        passionate about creating{" "}
+        <span className="italic">clean, maintainable code</span> that directly
+        contributes to a company&apos;s success.
       </motion.h1>
+
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
