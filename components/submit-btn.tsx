@@ -3,12 +3,17 @@ import React from "react";
 import * as ReactDOM from "react-dom";
 import { FaPaperPlane } from "react-icons/fa";
 
-const useFormStatusCompat: (() => { pending: boolean }) | undefined =
-  (ReactDOM as any)["useFormStatus"] ??
-  (ReactDOM as any)["experimental_" + "useFormStatus"];
+// Resolve a hook (or fallback) once at module scope to appease linting
+// and avoid conditional hook calls.
+const formStatusHook: () => { pending: boolean } =
+  // @ts-ignore
+  ((ReactDOM as any)["useFormStatus"] ??
+    // @ts-ignore
+    (ReactDOM as any)["experimental_" + "useFormStatus"] ??
+    (() => ({ pending: false })));
 
 export default function SubmitBtn() {
-  const pending = useFormStatusCompat ? useFormStatusCompat().pending : false;
+  const { pending } = formStatusHook();
   return (
     <button
       type="submit"
