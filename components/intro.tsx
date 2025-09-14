@@ -19,7 +19,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] "
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -29,12 +29,13 @@ export default function Intro() {
             transition={{ type: "tween", duration: 0.2 }}
           >
             <Image
-              src="https://i.ibb.co/ctM10gz/IMG-4529.jpg"
+              // src="https://i.ibb.co/ctM10gz/IMG-4529.jpg"
+              src="https://i.ibb.co/67kg94j8/IMG-7736.jpg"
               alt="Jacob's portrait"
-              width="192"
-              height="192"
+              width="250"
+              height="250"
               priority={true}
-              className="h-24 w-24 rounded-full border-[0.35rem] border-white shadow-xl object-cover"
+              className="h-36 w-36 rounded-full border-[0.35rem] border-white shadow-xl object-cover"
             />
           </motion.div>
           <motion.span
@@ -53,20 +54,21 @@ export default function Intro() {
         </div>
       </div>
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-2.5xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hello, I&apos;m Jacob, a{" "}
-        <span className="font-bold">front-end developer</span> and{" "}
+        <span className="font-bold">Hello, I&apos;m Jacob</span>, a{" "}
+        <span className="font-bold">front-end developer</span> &{" "}
         <span className="font-bold">data analyst</span>. My unique background in
-        analytics, management and development allows me to build robust,
-        user-friendly applications while also leveraging data to drive strategic
-        improvements. I specialise in the{" "}
-        <span className="underline">React and Next.js ecosystem</span>and am
-        passionate about creating{" "}
-        <span className="italic">clean, maintainable code</span> that directly
-        contributes to a company&apos;s success.
+        analytics and development allows me to build robust, user-friendly
+        applications while also leveraging data to{" "}
+        <span className="italic">drive strategic improvements. </span>I
+        specialise in the{" "}
+        <span className="underline">React and Next.js ecosystem</span> and am
+        passionate about{" "}
+        <span className="italic">creating clean, maintainable code</span> that
+        directly contributes to a company&apos;s success.
       </motion.h1>
 
       <motion.div

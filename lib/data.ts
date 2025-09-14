@@ -1,3 +1,4 @@
+import { url } from "inspector";
 import React from "react";
 
 import { CgWorkAlt } from "react-icons/cg";
@@ -33,72 +34,96 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduate Master's Degree",
-    location: "Manchester, UK",
+    title: "Lecturer in Statistics and Data Analysis",
+    location: "Doha, Qatar",
     description:
-      "I have Graduated from Manchester Metropolitan University with a Master's Degree in Analytics. Here, my fascination with computer languages, data analysis and programming began.",
-    icon: React.createElement(LiaUniversitySolid),
-    date: "2019",
-  },
-  {
-    title: "Fleet Manager",
-    location: "Bruntingthorpe, UK",
-    description:
-      "I managed a demonstration and events fleet for Jaguar and Land-Rover. I have created and overseen a process of vehicle preparations for events such as wimbledon.",
+      "Delivered lectures on complex statistical topics, preparing students for exams. Utilized tools like Python, R, and Excel in teaching, developing students' analytical and problem-solving skills.",
     icon: React.createElement(CgWorkAlt),
-    date: "2021 - 2022",
+    date: "July 2024 - July 2025",
   },
   {
-    title: "Graduated Bootcamp's",
-    location: "Leicester, GB",
+    title: "Freelance & Front-End Developer",
+    location: "Leicester, UK",
     description:
-      "I have completed a number of bootcamp's to learn new skills and technologies. These include Power BI, SQL, Javascript, React, Next.js, Node.js, TypeScript, Redux, Tailwind and more.",
+      "As a freelance and in-house developer, I created and maintained web applications for a B2B startup. I successfully delivered high-quality projects using technologies like React, Next.js, Redux, and Tailwind, directly improving the user experience and service offering.",
     icon: React.createElement(FaReact),
-    date: "2020 - 2022",
+    date: "June 2023 - July 2025",
   },
   {
     title: "Data Analyst",
     location: "Ashby-de-la-Zouch, UK",
     description:
-     "Transport Co-Ordinator turned Data Analyst for a large manufacturing company where i death with all the transport and are now responsible for analytics and data insights.",
+      "Promoted to Data Analyst, where I developed and implemented data-driven reports in Power BI and Excel. These reports provided actionable insights that significantly improved company KPIs, including delivery time and fleet utilization.",
     icon: React.createElement(CgWorkAlt),
-    date: "2022 - 2024",
+    date: "June 2022 - May 2024",
   },
   {
-    title: "Freelance Developer",
-    location: "Leicester, GB",
+    title: "Transport Coordinator & Fleet Management",
+    location: "Manchester, UK",
     description:
-      "Working both on personal and freelance projects, to gain experience and build my portfolio.",
-    icon: React.createElement(FaReact),
-    date: "2022 - 2024",
+      "Managed and optimized a fleet of 150 drivers, serving as the main point of contact for clients. I leveraged data analysis to make strategic decisions that significantly improved efficiency, customer satisfaction, and fleet utilization.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Sept 2020 - May 2022",
   },
-] as const;
+  {
+    title: "Education",
+    location: "Manchester, UK",
+    description:
+      "I hold a Bachelor's degree in International Business Management and a Master's in Data Analysis from Manchester Metropolitan University. I have also completed numerous bootcamps to specialize in technologies such as React, Next.js, Redux, and TypeScript.",
+    icon: React.createElement(LiaUniversitySolid),
+    date: "2015 - 2018 (BA) & 2019 (MA)",
+  },
+];
 
 export const projectsData = [
   {
-    title: "The Wild Oasis - Click",
+    title: "Rootly",
     description:
-      "The Wild Oasis is designed to manage hotel operations, including sales statistics, cabin management, user management, booking management and so much more!",
-    tags: ["React", "React Query", "Redux", "Supabase", "Styled Components"],
-    imageUrl: "/thewildoasis.png",
+      "A modern contact management tool enabling professionals to organize, filter, and track relationships. Features tagging, grouping, and an integrated activity log for a seamless, scalable workflow.",
+    tags: [
+      "React",
+      "shadcn",
 
-    projectUrl: "https://thewildoasis-cms.netlify.app",
+      "tailwind",
+      "typescript",
+      "zod",
+      "recharts",
+      "hook form",
+      "sonner",
+      "framer-motion",
+      "date-fns",
+      "AUTH",
+      "supabase",
+    ],
+    imageUrl: "/thumbnails/Rootly.png",
+
+    projectUrl: null, //"https://thewildoasis-cms.netlify.app",
+    url: "1118468552",
   },
   {
-    title: "Fast Pizza",
+    title: "The Wild Oasis - CMR",
     description:
-      "A quick and convinient way to order pizza online. Add your pizza to the cart, manage the quanitity, track your order and more.",
-    tags: ["React", "React Router", "Redux Toolkit", "Tailwind"],
-    imageUrl: "/fastpizza.png",
-    projectUrl: "https://fast-react-pizza-fewakes.netlify.app/",
+      "An internal management system for staff to oversee bookings, cabins, and users. Includes dashboards, check-ins, payment verification, and activity tracking, ensuring smooth operations and guest satisfaction.",
+    tags: [
+      "Next.js",
+      "Auth.js",
+      "Server Actions",
+      "SSG",
+      "Moder Hooks",
+      "Supabase",
+    ],
+    imageUrl: "/thumbnails/TheWildOasis_CMR.png",
+    projectUrl: null, //"https://fast-react-pizza-fewakes.netlify.app/",
+    url: "1118471674",
   },
   {
-    title: "World Wise",
+    title: "The Wild Oasis - Booking ",
     description:
-      "This web app is a travel tracking and adventure registration application. Show off your travels and adventures to your friends and family.",
-    tags: ["React", "Context API", "Thunks"],
-    imageUrl: "/wordwise.png",
+      "A guest-facing booking platform showcasing cabins, prices, and real-time availability. Customers can easily browse options, book stays, leave personalized notes, and manage their reservations, all through a smooth, intuitive, and fully mobile-friendly experience.",
+    tags: ["React", "React Query", "Redux", "Styled Components", "Supabase"],
+    imageUrl: "/thumbnails/TheWildOasis_Guest.png",
     projectUrl: null,
+    url: "1118471664",
   },
 ] as const;
 
