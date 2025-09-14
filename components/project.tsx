@@ -6,14 +6,13 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FaPlay } from "react-icons/fa";
 
-// Ensure ProjectProps includes optional projectUrl
 type ProjectProps = {
   title: string;
   description: string;
-  tags: string[]; // <-- explicitly typed as array of strings
+  tags: readonly string[];
   imageUrl: string;
   projectUrl?: string;
-  url: string; // Vimeo ID
+  url: string;
   index: number;
 };
 
@@ -22,8 +21,8 @@ export default function Project({
   description,
   tags,
   imageUrl,
-  projectUrl, // optional string
-  url, // Vimeo video ID
+  projectUrl,
+  url,
   index,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
@@ -56,7 +55,7 @@ export default function Project({
             {projectUrl ? (
               <a
                 className="text-2xl font-semibold"
-                href={projectUrl} // just use string
+                href={projectUrl}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -82,7 +81,6 @@ export default function Project({
             </ul>
           </div>
 
-          {/* Thumbnail with play overlay */}
           <div
             onClick={() => setOpenVideo(true)}
             className={`absolute top-8 w-[28.25rem] h-[16rem] z-10 cursor-pointer transition-transform duration-300 ${
@@ -110,7 +108,6 @@ export default function Project({
         </section>
       </motion.div>
 
-      {/* Video Modal */}
       {openVideo && (
         <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
           <button
