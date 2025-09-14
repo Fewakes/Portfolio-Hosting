@@ -6,14 +6,18 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FaPlay } from "react-icons/fa";
 
-type ProjectProps = (typeof projectsData)[number] & { index: number };
+// Ensure ProjectProps includes optional projectUrl
+type ProjectProps = (typeof projectsData)[number] & {
+  index: number;
+  projectUrl?: string;
+};
 
 export default function Project({
   title,
   description,
   tags,
   imageUrl,
-  projectUrl,
+  projectUrl, // optional string
   url, // Vimeo video ID
   index,
 }: ProjectProps) {
@@ -44,21 +48,27 @@ export default function Project({
                 : "sm:mr-auto sm:text-left sm:items-start"
             }`}
           >
-            <a
-              className="text-2xl font-semibold"
-              href={projectUrl?.toString()}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {title}
-            </a>
+            {projectUrl ? (
+              <a
+                className="text-2xl font-semibold"
+                href={projectUrl} // just use string
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {title}
+              </a>
+            ) : (
+              <span className="text-2xl font-semibold">{title}</span>
+            )}
+
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-white/70">
               {description}
             </p>
+
             <ul className="flex flex-wrap mt-5 gap-2 sm:mt-auto">
-              {tags.map((tag, index) => (
+              {tags.map((tag, idx) => (
                 <li
-                  key={index}
+                  key={idx}
                   className="bg-black/[0.7] px-3 py-1 text-[0.75rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
                 >
                   {tag}
