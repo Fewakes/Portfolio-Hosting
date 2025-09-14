@@ -1,9 +1,15 @@
 import React from "react";
-import { experimental_useFormStatus as useFormStatus } from "react-dom";
+import * as ReactDOM from "react-dom";
 import { FaPaperPlane } from "react-icons/fa";
 
+// React 18 compatibility: use experimental hook if present; otherwise no-op
+const useFormStatusCompat: (() => { pending: boolean }) | undefined =
+  // @ts-ignore - runtime feature detection
+  (ReactDOM as any).experimental_useFormStatus ??
+  (ReactDOM as any).useFormStatus;
+
 export default function SubmitBtn() {
-  const { pending } = useFormStatus();
+  const pending = useFormStatusCompat ? useFormStatusCompat().pending : false;
   return (
     <button
       type="submit"
