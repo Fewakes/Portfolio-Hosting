@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Resend } from "resend";
+import { renderAsync } from "@react-email/render";
 import { validateString } from "../lib/utils";
 import { getErrorMessage } from "../lib/utils";
 import ContactFormEmail from "@/email/contact-form-email";
@@ -26,16 +27,18 @@ export const sendEmail = async (formData: FormData) => {
 
   let data;
   try {
+    const emailElement = React.createElement(ContactFormEmail, {
+      message: message as string,
+      senderEmail: senderEmail as string,
+    });
+    const html = await renderAsync(emailElement);
+
     data = await resend.emails.send({
       from: "Portfolio_Contact_Form<onboarding@resend.dev>",
       to: "slojkowski33@gmail.com",
       subject: "Message from contact form;",
       replyTo: senderEmail as string,
-      //text: message as string,
-      react: React.createElement(ContactFormEmail, {
-        message: message as string,
-        senderEmail: senderEmail as string,
-      }),
+      html,
     });
   } catch (error: unknown) {
     return {
