@@ -7,9 +7,14 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { FaPlay } from "react-icons/fa";
 
 // Ensure ProjectProps includes optional projectUrl
-type ProjectProps = (typeof projectsData)[number] & {
-  index: number;
+type ProjectProps = {
+  title: string;
+  description: string;
+  tags: string[]; // <-- explicitly typed as array of strings
+  imageUrl: string;
   projectUrl?: string;
+  url: string; // Vimeo ID
+  index: number;
 };
 
 export default function Project({
